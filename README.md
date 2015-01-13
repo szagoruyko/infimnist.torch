@@ -7,11 +7,11 @@ To use it please download the archive from the link above and unpack somewhere. 
 
 ```lua
 require 'infimnist'
-provider = infimnist.InfiMnist('data') -- pust your path to data folder here
+provider = infimnist.InfiMnist('data') -- put your path to data folder here
 sample, label = provider:getSample(34)
 ```
 
-Samples from 0 to 9999 are test digits, from 10000 to 69999 are train and above - elastic deformations
+Samples from 0 to 9999 are test digits, from 10000 to 69999 are train and above - elastic deformations.
 So to generate a deformed sample do
 
 ```lua
