@@ -10,5 +10,5 @@ ENDIF()
 FIND_PACKAGE(Torch REQUIRED)
 
 SET(src infimnist.c)
-SET(luasrc init.lua ffi.lua)
+SET(luasrc init.lua ffi.lua infimnist.lua)
 ADD_TORCH_PACKAGE(infimnist "${src}" "${luasrc}" "InfiMNIST ffi binding")

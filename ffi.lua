@@ -14,4 +14,4 @@ const unsigned char *infimnist_get_pattern(infimnist_t*, long index);
 void infimnist_cache_clear(infimnist_t*);
 ]]
 
-infimnist.C = ffi.load './build/libinfimnist.so'
+infimnist.C = ffi.load(package.searchpath('libinfimnist', package.cpath))
