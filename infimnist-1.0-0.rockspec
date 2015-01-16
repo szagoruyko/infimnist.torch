@@ -2,7 +2,7 @@ package = "infimnist"
 version = "1.0-0"
 
 source = {
-   url = "git://github.com/szagoruyko/infimnist",
+   url = "git://github.com/szagoruyko/infimnist.git",
    tag = "master"
 }
 
