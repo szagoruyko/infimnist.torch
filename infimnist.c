@@ -279,7 +279,10 @@ compute_transformed_vector(infimnist_t *p, long i)
         s[j] = p->x[i][j];
       return s;
     }
-  k1 = (int)(((unsigned long)(i*131071L))%(FIELDNUM-1));
+  /* the following computation is made with uint32_t
+    in order to wrap the multiplication and remain
+    compatible with old mnist8m */
+  k1 = (int)(((uint32_t)(i)*131071)%(FIELDNUM-1));
   k2 = (int)(((unsigned long)(k1+1+2*i))%FIELDNUM);
   a = (int)((unsigned long)(i-TESTNUM)%TRAINNUM);
   alpha = p->alpha;
