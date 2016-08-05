@@ -27,6 +27,7 @@
 //#include "infimnist.h"
 typedef struct infimnist_s infimnist_t;
 
+#include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
